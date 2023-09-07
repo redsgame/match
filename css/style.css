@@ -1,0 +1,375 @@
+
+/*FONTS*/
+@font-face {
+    font-family: "Yandex Sans";
+    src: url("../fonts/YandexSansDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/YandexSansDisplay-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Yandex Sans Text";
+    src: url("../fonts/YandexSansText-Regular.woff2") format("woff2"),
+    url("../fonts/YandexSansText-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.color-red {
+    color: #FF4935;
+}
+.font-weight-700 {
+    font-weight: 700;
+}
+
+
+/*MAIN*/
+html{
+    box-sizing: border-box;
+    background: url("../img/background7.png");    
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Yandex Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #0D0D0D; 
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {    
+    flex: 1 100%;  
+}
+
+
+
+/*HEADER*/
+.header-wrapper {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.logo-link {
+    font-family: 'Yandex Sans Text';
+    text-decoration: none;
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.logo-link img {
+    margin-right: 14px;
+}
+
+.top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.top-menu li {
+    margin-right: 32px;
+}
+
+.top-menu li:last-child {
+    margin-right: 0;
+}
+
+.rounded-button {
+    background-color: #FF4935;
+    border: 0;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 16px;
+    line-height: 20px;
+}
+
+.rounded-button:hover {
+    background-color: #771E8D;
+}
+
+.rounded-button:focus {
+    background-color: #FF7E35;
+}
+
+.messages-button {
+    display: block;
+    width: 29px;
+    height: 24px;
+    position: relative;
+}
+.messages-indicator {
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #FFE356;
+    border: 0;
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;    
+    font-weight: 600;
+    font-size: 9.749px;
+}
+
+
+
+
+/*SECTIONS*/
+.first {   
+    max-width: 1200px;
+    margin: auto auto 90px auto;
+    text-align: center;   
+}
+
+.first-image {
+    margin-bottom: 64px;
+}
+
+.first-block-text {  
+   font-size: 64px;
+   line-height: 83.2px;
+   margin-bottom: 64px;
+} 
+
+.about-service-link {
+    color: #0D0D0D;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+.second {
+    display: flex;    
+    max-width: 1200px;
+    margin: auto auto 90px auto;
+    text-align: left;
+}
+
+.find-teammates {
+    max-width: 687px;
+}
+.about-teammates {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 67.2px;
+    margin-bottom: 24px;
+}
+.about-algoritm {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 31.2px;
+    margin-bottom: 50px;
+}
+
+.second-section-buttons {
+    text-align: left;
+}
+
+.second-section-buttons button {
+    margin-right: 50px;
+}
+
+
+
+.third {
+    display: flex;
+    text-align: left;
+    max-width: 1200px;
+    margin: auto auto 90px auto;
+}
+
+.about-registration, .about-searches {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    margin-bottom: 56px;
+    margin-right: 120px;    
+    max-width: 482px;
+    padding: 32px;
+    gap: 8px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.19);
+    font-weight: 300;
+}
+
+.third h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.2px;
+    color: #FF4935;
+}
+
+
+
+/*FOOTER*/
+.footer {
+    background: lightblue;
+    height: 80px;
+}
+
+
+
+
+/*MOBILE*/
+.only-mobile {
+    display: none;
+    visibility: hidden;
+}
+@media all and (min-width: 800px) {   
+    body {
+        padding: 0 16px;
+    }
+}
+
+@media all and (min-width: 600px) {
+        .aside {
+            flex: 1;
+        }
+}
+
+@media screen and (max-width: 760px) {
+
+    .only-mobile {
+        display: block;
+        visibility: visible;
+    }
+    .mobile-hidden {
+        display: none;
+        visibility: hidden;
+    }
+    .header-wrapper {
+        height: 32px;        
+        margin: 16px 16px 40px 16px;
+    }
+
+    .header_profile_button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .top-menu li {
+        margin-right: 16px;
+    }
+
+    main {
+        padding: 0 16px;
+    }
+
+    .first-image {
+        margin-bottom: 24px;
+    }
+
+    .first-block-register-button {
+        margin-bottom: 14px;
+    }
+
+    .second {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .minded-person {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .find-teammates {
+        order: 2;
+    }
+
+    .about-algoritm {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .about-teammates {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .second-section-buttons {
+        text-align: center;
+       
+    }
+
+    .second-section-buttons button {
+        margin-right: 0;
+    }
+
+    .about-registration, .about-searches {
+        font-size: 18px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .registration-image {
+       margin-bottom: 20px;
+    }
+   .about-searches {
+        margin-right: 0;
+        
+    }
+
+    .third {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .third h3 {
+        font-size: 20px;
+    }
+
+    .add_search_header_button {
+      visibility: hidden;
+      display: none;
+    }
+    .logo-link {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .logo-link img {
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .first-block-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+  }
