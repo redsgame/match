@@ -27,7 +27,7 @@
 /*MAIN*/
 html{
     box-sizing: border-box;
-    background: url("../img/background7.png");    
+    background: url("../img/background.png");    
 }
 
 *, *::before, *::after{
